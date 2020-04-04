@@ -5,7 +5,9 @@
             <router-link v-for="page in pages"
                          :key="page.name"
                          :class="navActive ? 'link link--active' : 'link link--inactive'"
-                         :to="page.route">
+                         :to="page.route"
+                         @click.native="toggleNav()"
+            >
                 {{page.name}}
             </router-link>
             <span @click="toggleNav()" :class="navActive ? 'nav__toggle--active' : ''" class="nav__toggle"/>
@@ -48,6 +50,7 @@
                         opacity: [0, 0.7],
                         filter: 'blur(' + 0 + 'px)',
                         easing: 'easeInOutQuad',
+                        duration: 400,
                         delay: anime.stagger(100) // increase delay by 100ms for each elements.
                     });
                 } else {
@@ -57,6 +60,7 @@
                         opacity: [0.7, 0],
                         filter: 'blur(' + 3 + 'px)',
                         easing: 'easeInOutQuad',
+                        duration: 400,
                         delay: anime.stagger(100) // increase delay by 100ms for each elements.
                     });
                 }
