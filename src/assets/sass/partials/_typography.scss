@@ -8,6 +8,18 @@ h2{
   font-weight: 300;
   line-height: 48px;
 }
+p{
+  font-size: 18px;
+}
 .mono{
   font-family: $secondary-font;
+}
+a{
+  color: $primary-color;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: $default-transition;
+  &:hover{
+    opacity: 1;
+  }
 }
