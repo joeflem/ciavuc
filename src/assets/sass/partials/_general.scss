@@ -1,0 +1,16 @@
+body{
+  background-color: #000;
+  color: #fff;
+  font-family: $primary-font;
+  font-size: 14px;
+}
+.content{
+  width: 1000px;
+  margin: 0 auto;
+  display: block;
+  @media only screen and (max-width: 1220px){
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

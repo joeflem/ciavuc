@@ -1,0 +1,36 @@
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  .intro__text {
+    width: 100%;
+    position: relative;
+    h1, p {
+      width: 100%
+    }
+    h1{
+      font-size: 42px;
+      font-weight: 100;
+      margin-bottom: 10px;
+    }
+    p{
+      opacity: 0.5;
+      font-size: 22px;
+    }
+    &:after{
+      content: "";
+      background-image: url('/images/down-arrow.svg');
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 18px;
+      height: 18px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+  }
+}
