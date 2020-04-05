@@ -19,18 +19,30 @@
       opacity: 0.5;
       font-size: 22px;
     }
+    @media only screen and (max-width: 500px) {
+      h1{
+        font-size: 28px;
+        font-weight: 100;
+        margin-bottom: 0;
+      }
+      p{
+        font-size: 14px;
+        width: 80%;
+        line-height: 24px;
+      }
+    }
     &:after{
       content: "";
       background-image: url('/images/down-arrow.svg');
       position: absolute;
-      bottom: 0;
       right: 0;
       width: 18px;
       height: 18px;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
