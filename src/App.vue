@@ -14,7 +14,7 @@
         </div>
         <router-view/>
         <footer>
-            <p class="mono">Powered by caffeine & <a href="digitalocean">Digital Ocean</a></p>
+            <p class="mono">Powered by caffeine, <a href="https://vuejs.org">Vue.js</a> & <a href="https://netlify.com">Netlify</a></p>
             <p class="copyright">© {{ new Date().getFullYear() }} Joe Ciavucco</p>
         </footer>
     </div>
